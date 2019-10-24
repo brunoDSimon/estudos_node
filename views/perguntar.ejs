@@ -1,0 +1,21 @@
+<%- include partials/header.ejs %>
+<body>
+    <%- include partials/navbar.ejs %>
+    <div class="container badge-light mt-3">
+        <h5>Realizar pergunta</h5> 
+        <form method="POST" action="/salvarpergunta" class="form-group">
+            <div class="row">
+                <div class="col-4 pl-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="text" placeholder="titulo" class="form-control mb-2" name="titulo">
+                            <textarea placeholder="descreva" class="form-control" name="descricao"></textarea>
+                            <button type="submit" class="btn btn-outline-danger">Perguntar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<%- include partials/footer.ejs %>
